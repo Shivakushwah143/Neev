@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Star } from 'lucide-react';
+import Link from 'next/link';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -39,9 +40,8 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
         >
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -57,7 +57,7 @@ const Hero = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
 
-          
+
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -68,22 +68,27 @@ const Hero = () => {
                   {slides[currentSlide].subtitle}
                 </span>
               </h1>
-              
+
               <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed">
-                Professional photography services that capture the essence of your special moments 
+                Professional photography services that capture the essence of your special moments
                 with artistic vision and technical excellence.
               </p>
             </div>
 
             {/* Call to Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 pt-8">
-              <Button className="btn-primary text-lg px-10 py-4 group">
-                View Portfolio
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
-              <Button variant="outline" className="btn-secondary text-lg px-10 py-4">
-                Learn More
-              </Button>
+              <Link href="/portfolio">
+                <Button className="btn-primary text-lg px-10 py-4 group">
+                  View Portfolio
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Button>
+              </Link>
+
+              <Link href="/services">
+                <Button variant="outline" className="btn-secondary text-lg px-10 py-4">
+                  Learn More
+                </Button>
+              </Link>
             </div>
 
             {/* Stats */}
@@ -111,9 +116,8 @@ const Hero = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-12 h-1 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-warm-gold' : 'bg-white/50'
-            }`}
+            className={`w-12 h-1 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-warm-gold' : 'bg-white/50'
+              }`}
           />
         ))}
       </div>

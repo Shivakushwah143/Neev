@@ -1,43 +1,46 @@
+"use client"
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Heart, Users, Camera, Building, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Services = () => {
-  const services =  [
-  {
-    icon: Heart,
-    title: 'Wedding Photography',
-    description: 'Capture your special day with timeless elegance and artistic vision.',
-    image: 'https://images.unsplash.com/photo-1610173826608-bd1f53a52db1?w=500&auto=format&fit=crop&q=60',
-    features: ['Pre-wedding shoots', 'Ceremony coverage', 'Reception photography', 'Digital gallery'],
-    price: 'Starting from ₹60,000',
-  },
-  {
-    icon: Users,
-    title: 'Event Photography',
-    description: 'Professional coverage for corporate events, parties, and celebrations.',
-    image: 'https://images.unsplash.com/photo-1612389930565-6975454dc7cc?w=500&auto=format&fit=crop&q=60',
-    features: ['Corporate events', 'Birthday parties', 'Anniversaries', 'Social gatherings'],
-    price: 'Starting from ₹18,000',
-  },
-  {
-    icon: Camera,
-    title: 'Portrait Photography',
-    description: 'Individual, family, and couple portraits that showcase your personality.',
-    image: 'https://plus.unsplash.com/premium_photo-1734388423050-afdd7d6daca5?w=500&auto=format&fit=crop&q=60',
-    features: ['Family portraits', 'Individual headshots', 'Couple sessions', 'Maternity shoots'],
-    price: 'Starting from ₹6,000',
-  },
-  {
-    icon: Building,
-    title: 'Commercial Photography',
-    description: 'Professional imagery for businesses, products, and marketing needs.',
-    image: 'https://plus.unsplash.com/premium_photo-1675942080027-a88be2778670?w=500&auto=format&fit=crop&q=60',
-    features: ['Product photography', 'Corporate headshots', 'Architecture', 'Brand imagery'],
-    price: 'Starting from ₹12,000',
-  },
-];
+  const services = [
+    {
+      icon: Heart,
+      title: 'Wedding Photography',
+      description: 'Capture your special day with timeless elegance and artistic vision.',
+      image: 'https://images.unsplash.com/photo-1610173826608-bd1f53a52db1?w=500&auto=format&fit=crop&q=60',
+      features: ['Pre-wedding shoots', 'Ceremony coverage', 'Reception photography', 'Digital gallery'],
+      price: 'Starting from ₹60,000',
+    },
+    {
+      icon: Users,
+      title: 'Event Photography',
+      description: 'Professional coverage for corporate events, parties, and celebrations.',
+      image: 'https://images.unsplash.com/photo-1612389930565-6975454dc7cc?w=500&auto=format&fit=crop&q=60',
+      features: ['Corporate events', 'Birthday parties', 'Anniversaries', 'Social gatherings'],
+      price: 'Starting from ₹18,000',
+    },
+    {
+      icon: Camera,
+      title: 'Portrait Photography',
+      description: 'Individual, family, and couple portraits that showcase your personality.',
+      image: 'https://plus.unsplash.com/premium_photo-1734388423050-afdd7d6daca5?w=500&auto=format&fit=crop&q=60',
+      features: ['Family portraits', 'Individual headshots', 'Couple sessions', 'Maternity shoots'],
+      price: 'Starting from ₹6,000',
+    },
+    {
+      icon: Building,
+      title: 'Commercial Photography',
+      description: 'Professional imagery for businesses, products, and marketing needs.',
+      image: 'https://plus.unsplash.com/premium_photo-1675942080027-a88be2778670?w=500&auto=format&fit=crop&q=60',
+      features: ['Product photography', 'Corporate headshots', 'Architecture', 'Brand imagery'],
+      price: 'Starting from ₹12,000',
+    },
+  ];
 
 
   return (
@@ -54,7 +57,7 @@ const Services = () => {
             Photography Services
           </h2>
           <p className="text-xl text-muted-text max-w-3xl mx-auto leading-relaxed">
-            From intimate weddings to grand celebrations, we offer comprehensive photography services 
+            From intimate weddings to grand celebrations, we offer comprehensive photography services
             tailored to capture your most precious moments.
           </p>
         </div>
@@ -76,7 +79,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              
+
               <CardHeader className="pb-4">
                 <div className="flex justify-between items-start mb-2">
                   <CardTitle className="text-2xl text-charcoal group-hover:text-warm-gold transition-colors duration-300">
@@ -90,7 +93,7 @@ const Services = () => {
                   {service.description}
                 </CardDescription>
               </CardHeader>
-              
+
               <CardContent className="pt-0">
                 <div className="space-y-4">
                   <ul className="grid grid-cols-2 gap-2">
@@ -101,11 +104,13 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  
-                  <Button className="btn-secondary w-full group mt-6">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </Button>
+
+                  <Link href="/services" passHref>
+                    <Button className="btn-secondary w-full group mt-6" onClick={ ()=> alert('done')}>
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -119,7 +124,7 @@ const Services = () => {
               Ready to Capture Your Story?
             </h3>
             <p className="text-lg text-muted-text mb-8 max-w-2xl mx-auto">
-              Let's discuss your vision and create something beautiful together. 
+              Let's discuss your vision and create something beautiful together.
               Every moment deserves to be preserved with artistry and care.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">

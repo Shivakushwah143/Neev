@@ -11,54 +11,84 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Priya Sharma',
       role: 'Bride',
-      event: 'Wedding Photography',
+      event: 'Traditional Marwari Wedding',
       rating: 5,
-      text: 'Absolutely magical! They captured every emotion and moment perfectly. The photos are beyond our dreams, and we\'ll treasure them forever. Their professionalism and artistic eye are unmatched.',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=150&q=80',
-      location: 'Napa Valley Wedding',
+      text: 'Absolutely magical! They captured every emotion and moment of our Marwari wedding perfectly. The photos of our pithi ceremony and phera rituals are beyond our dreams. Their understanding of Indian traditions made all the difference.',
+      image: 'https://images.unsplash.com/photo-1729101145932-5e33c8e9ba9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kYWluJTIwZ2lybCUyMGZvciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D',
+      location: 'Rajwada Palace, Indore',
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      role: 'Event Organizer',
-      event: 'Corporate Event',
+      name: 'Rahul Verma',
+      role: 'Groom',
+      event: 'Punjabi Wedding',
       rating: 5,
-      text: 'Outstanding work on our annual gala. They managed to capture the essence of our brand while creating stunning visuals that exceeded all expectations. Highly recommended for any professional event.',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
-      location: 'Tech Conference 2023',
+      text: 'Outstanding work on our Anand Karaj ceremony! They beautifully captured the chooda ceremony and all the vibrant celebrations. Made us feel so comfortable throughout the hectic wedding schedule.',
+      image: 'https://plus.unsplash.com/premium_photo-1682092039530-584ae1d9da7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D',
+      location: 'Local Gurudwara, Indore',
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
-      role: 'Mother',
-      event: 'Family Portrait',
+      name: 'Anjali Patel',
+      role: 'Mother of the Bride',
+      event: 'Gujarati Wedding',
       rating: 5,
-      text: 'The family session was incredible! They made everyone feel comfortable and natural. The photos perfectly capture our family\'s personality and love. We couldn\'t be happier with the results.',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80',
-      location: 'Family Session',
+      text: 'The team understood our Gujarati traditions perfectly. They captured the garba night and mandap ceremony with such elegance. The family portraits with our traditional attire are absolutely priceless.',
+      image: 'https://plus.unsplash.com/premium_photo-1723568666044-1b066e26b1fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8',
+      location: 'Farmhouse, Indore',
     },
     {
       id: 4,
-      name: 'David Thompson',
-      role: 'Groom',
-      event: 'Destination Wedding',
+      name: 'Vikram Singh',
+      role: 'Event Planner',
+      event: 'Corporate Event',
       rating: 5,
-      text: 'They traveled to Greece for our wedding and the results were breathtaking. Every shot tells our love story beautifully. Their attention to detail and creative vision made our special day even more memorable.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
-      location: 'Santorini Wedding',
+      text: 'Professional and creative team! They handled our large corporate event with multiple dignitaries perfectly. The candid shots during cultural performances were particularly impressive.',
+      image: 'https://images.unsplash.com/photo-1659805839124-ecec1232ea31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGhvdG9ncmFwaHklMjBib3l8ZW58MHx8MHx8fDA%3D',
+      location: 'Hotel Fortune, Indore',
     },
     {
       id: 5,
-      name: 'Lisa Park',
-      role: 'Marketing Director',
-      event: 'Brand Photography',
+      name: 'Sunita yadav',
+      role: 'Mother',
+      event: 'Family Portrait',
       rating: 5,
-      text: 'Professional, creative, and delivered exactly what we needed for our rebrand. The commercial shots elevated our marketing materials significantly. A true partner in bringing our vision to life.',
-      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=150&q=80',
-      location: 'Brand Campaign',
+      text: 'The family session at Lal Bagh Palace was incredible! They made our children feel comfortable and captured our family bond beautifully. The traditional and contemporary mix in photos is exactly what we wanted.',
+      image: 'https://images.unsplash.com/photo-1688802928956-fa8139142c04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFvbWFudGljJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D',
+      location: 'Lal Bagh Palace, Indore',
     },
+    {
+      id: 6,
+      name: 'Arjun Mehta',
+      role: 'Business Owner',
+      event: 'Commercial Photography',
+      rating: 5,
+      text: 'Excellent work for our jewelry brand campaign at Sarafa Bazaar. They understood the traditional aesthetics we wanted and delivered stunning images that boosted our sales significantly.',
+      image: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3R1ZGVudHxlbnwwfHwwfHx8MA%3D%3D',
+      location: 'Sarafa Bazaar, Indore',
+    },
+    {
+      id: 7,
+      name: 'Deepika jha',
+      role: 'Bride',
+      event: 'South Indian Wedding',
+      rating: 5,
+      text: 'They beautifully captured our Telugu wedding rituals - from the muhurtham to the mangalsutra ceremony. The attention to detail in capturing our silk sarees and gold jewelry was remarkable.',
+      image: 'https://images.unsplash.com/photo-1635194936300-08a36d3a90de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBodG90fGVufDB8fDB8fHww',
+      location: 'Convention Center, Indore',
+    },
+    {
+      id: 8,
+      name: 'Rajesh Khanna',
+      role: 'Father of the Groom',
+      event: 'Wedding Photography',
+      rating: 5,
+      text: 'As a father, I was worried about the wedding chaos, but the photography team managed everything smoothly. They captured all the important family moments without being intrusive.',
+      image: 'https://plus.unsplash.com/premium_photo-1669850858880-d88baa3d24d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww',
+      location: 'Ujjain Wedding',
+    }
   ];
 
   useEffect(() => {
@@ -93,7 +123,7 @@ const Testimonials = () => {
             What Our Clients Say
           </h2>
           <p className="text-xl text-muted-text max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our clients have to say about 
+            Don't just take our word for it. Here's what our clients from across Madhya Pradesh have to say about 
             their experience working with us.
           </p>
         </div>
@@ -193,19 +223,19 @@ const Testimonials = () => {
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">500+</div>
-            <div className="text-sm text-muted-text">Happy Clients</div>
+            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">350+</div>
+            <div className="text-sm text-muted-text">Happy Couples</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">1000+</div>
+            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">500+</div>
             <div className="text-sm text-muted-text">Events Captured</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">50+</div>
+            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">25+</div>
             <div className="text-sm text-muted-text">Awards Won</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">10+</div>
+            <div className="text-3xl md:text-4xl font-bold text-warm-gold mb-2">8+</div>
             <div className="text-sm text-muted-text">Years Experience</div>
           </div>
         </div>

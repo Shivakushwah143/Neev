@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Camera, Instagram, Facebook, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Camera, Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,9 +8,9 @@ const Footer = () => {
   const footerLinks = {
     services: [
       { name: 'Wedding Photography', href: '/services#wedding' },
+      { name: 'Pre-Wedding Shoots', href: '/services#pre-wedding' },
+      { name: 'Family Portraits', href: '/services#portrait' },
       { name: 'Event Photography', href: '/services#event' },
-      { name: 'Portrait Photography', href: '/services#portrait' },
-      { name: 'Commercial Photography', href: '/services#commercial' },
     ],
     company: [
       { name: 'About Us', href: '/about' },
@@ -27,9 +27,8 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/lensart' },
-    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/lensart' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/lensart' },
+    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/yourphotography' },
+    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/yourphotography' },
   ];
 
   return (
@@ -41,26 +40,26 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6">
             <Link href="/" className="flex items-center space-x-2 group">
               <Camera className="h-8 w-8 text-warm-gold transition-transform duration-300 group-hover:scale-110" />
-              <span className="text-2xl font-bold">LensArt</span>
+              <span className="text-2xl font-bold">Your Photography</span>
             </Link>
             <p className="text-white/70 leading-relaxed">
-              Capturing life's most precious moments with artistic vision and technical excellence. 
-              Professional photography services that tell your unique story.
+              Professional online photography services based in Indore. 
+              Capturing your special moments across Madhya Pradesh with artistic vision and technical excellence.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-white/70">
                 <MapPin className="h-4 w-4 text-warm-gold" />
-                <span className="text-sm">123 Photography Avenue, NY 10001</span>
+                <span className="text-sm">Online Services • Serving Indore & MP</span>
               </div>
               <div className="flex items-center space-x-3 text-white/70">
                 <Phone className="h-4 w-4 text-warm-gold" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+91 98765 43210</span>
               </div>
               <div className="flex items-center space-x-3 text-white/70">
                 <Mail className="h-4 w-4 text-warm-gold" />
-                <span className="text-sm">hello@lensart.com</span>
+                <span className="text-sm">LensArt@gmain.com</span>
               </div>
             </div>
 
@@ -130,22 +129,17 @@ const Footer = () => {
               ))}
             </ul>
 
-            {/* Newsletter Signup */}
+            {/* Online Booking Notice */}
             <div className="pt-6 border-t border-white/10">
-              <h4 className="text-md font-medium text-white mb-3">Stay Updated</h4>
+              <h4 className="text-md font-medium text-white mb-3">Online Booking</h4>
               <p className="text-white/70 text-sm mb-4">
-                Get the latest updates and photography tips.
+                Book your photography session online. Available throughout Indore and Madhya Pradesh.
               </p>
-              <div className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 bg-white/10 border border-white/20 rounded px-3 py-2 text-sm text-white placeholder-white/50 focus:outline-none focus:border-warm-gold"
-                />
-                <button className="bg-warm-gold text-white px-4 py-2 rounded text-sm font-medium hover:bg-warm-gold/90 transition-colors duration-300">
-                  Subscribe
+              <Link href="/contact">
+                <button className="bg-warm-gold text-white px-4 py-2 rounded text-sm font-medium hover:bg-warm-gold/90 transition-colors duration-300 w-full">
+                  Book Consultation
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -156,7 +150,7 @@ const Footer = () => {
         <div className="container-custom">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/70 text-sm">
-              © {currentYear} LensArt Photography. All rights reserved.
+              © {currentYear} Your Photography. All rights reserved.
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <Link href="/terms" className="text-white/70 hover:text-warm-gold transition-colors duration-300">
@@ -165,8 +159,8 @@ const Footer = () => {
               <Link href="/privacy" className="text-white/70 hover:text-warm-gold transition-colors duration-300">
                 Privacy Policy
               </Link>
-              <Link href="/cookies" className="text-white/70 hover:text-warm-gold transition-colors duration-300">
-                Cookie Policy
+              <Link href="/refund" className="text-white/70 hover:text-warm-gold transition-colors duration-300">
+                Refund Policy
               </Link>
             </div>
           </div>

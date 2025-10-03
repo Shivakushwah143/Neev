@@ -35,23 +35,23 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Studio Location',
-      details: ['123 Photography Avenue', 'New York, NY 10001'],
+      title: 'Service Area',
+      details: ['Online Services', 'Serving Indore & MP'],
     },
     {
       icon: Phone,
       title: 'Phone Number',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543'],
+      details: ['+91 98765 43210', '+91 98765 43211'],
     },
     {
       icon: Mail,
       title: 'Email Address',
-      details: ['hello@lensart.com', 'bookings@lensart.com'],
+      details: ['hello@yourphotography.com', 'bookings@yourphotography.com'],
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat - Sun: 10:00 AM - 4:00 PM'],
+      details: ['Mon - Sun: 9:00 AM - 8:00 PM', 'Available for weekend events'],
     },
   ];
 
@@ -66,11 +66,11 @@ const Contact = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-4">
-            Let's Create Something Beautiful
+            Let's Capture Your Special Moments
           </h2>
           <p className="text-xl text-muted-text max-w-3xl mx-auto leading-relaxed">
-            Ready to capture your special moments? We'd love to hear about your vision 
-            and discuss how we can bring it to life.
+            Ready to book your photography session? We serve clients across Indore and Madhya Pradesh. 
+            Share your vision and we'll create beautiful memories together.
           </p>
         </div>
 
@@ -80,10 +80,10 @@ const Contact = () => {
             <Card className="border-0 shadow-xl bg-white">
               <CardHeader>
                 <CardTitle className="text-2xl text-charcoal">
-                  Send Us a Message
+                  Book Your Session
                 </CardTitle>
                 <p className="text-muted-text">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we'll get back to you within 2 hours.
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -121,15 +121,16 @@ const Contact = () => {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="phone" className="text-charcoal font-medium">
-                        Phone Number
+                        WhatsApp Number *
                       </Label>
                       <Input
                         id="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+91 98765 43210"
                         className="border-champagne/30 focus:border-warm-gold"
+                        required
                       />
                     </div>
                     <div className="space-y-2">
@@ -142,9 +143,10 @@ const Contact = () => {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="wedding">Wedding Photography</SelectItem>
+                          <SelectItem value="pre-wedding">Pre-Wedding Shoot</SelectItem>
+                          <SelectItem value="portrait">Family Portraits</SelectItem>
                           <SelectItem value="event">Event Photography</SelectItem>
-                          <SelectItem value="portrait">Portrait Photography</SelectItem>
-                          <SelectItem value="commercial">Commercial Photography</SelectItem>
+                          <SelectItem value="maternity">Maternity Shoot</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
@@ -153,7 +155,7 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <Label htmlFor="date" className="text-charcoal font-medium">
-                      Event Date
+                      Event/Shoot Date
                     </Label>
                     <Input
                       id="date"
@@ -166,13 +168,13 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-charcoal font-medium">
-                      Message *
+                      Your Requirements *
                     </Label>
                     <Textarea
                       id="message"
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
-                      placeholder="Tell us about your vision, special requirements, or any questions you have..."
+                      placeholder="Tell us about your event, location preferences, number of people, special moments you want captured..."
                       rows={6}
                       className="border-champagne/30 focus:border-warm-gold resize-none"
                       required
@@ -180,7 +182,7 @@ const Contact = () => {
                   </div>
 
                   <Button type="submit" className="btn-primary w-full text-lg py-3 group">
-                    Send Message
+                    Send Booking Request
                     <Send className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </Button>
                 </form>
@@ -218,31 +220,45 @@ const Contact = () => {
             <Card className="border-0 shadow-lg bg-gradient-to-br from-warm-gold to-champagne text-white">
               <CardContent className="p-8 text-center">
                 <h3 className="text-xl font-bold mb-4">
-                  Need Immediate Assistance?
+                  Quick Response Guaranteed
                 </h3>
                 <p className="text-white/90 mb-6">
-                  For urgent inquiries or last-minute bookings, give us a call directly.
+                  For urgent wedding bookings or same-day inquiries, call us directly.
                 </p>
                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-warm-gold">
-                  Call Now: +1 (555) 123-4567
+                  Call Now: +91 98765 43210
                 </Button>
               </CardContent>
             </Card>
           </div>
         </div>
 
-        {/* Map Section */}
+        {/* Service Area Section */}
         <div className="mt-16">
           <Card className="border-0 shadow-xl overflow-hidden bg-white">
             <div className="h-96 bg-muted-text/10 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-warm-gold mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-charcoal mb-2">
-                  Visit Our Studio
+                  Service Areas
                 </h3>
-                <p className="text-muted-text">
-                  123 Photography Avenue, New York, NY 10001
+                <p className="text-muted-text mb-4">
+                  We serve clients across Madhya Pradesh
                 </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Indore</p>
+                  </div>
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Ujjain</p>
+                  </div>
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Bhopal</p>
+                  </div>
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Dewas</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Card>

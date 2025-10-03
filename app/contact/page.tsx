@@ -37,65 +37,65 @@ const ContactPage = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Studio Location',
-      details: ['123 Photography Avenue', 'New York, NY 10001', 'United States'],
-      action: 'Get Directions'
+      title: 'Service Area',
+      details: ['Online Services', 'Serving Indore & MP', 'Available for travel'],
+      action: ' Service Areas comming soon'
     },
     {
       icon: Phone,
-      title: 'Phone Numbers',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543', 'Available 9 AM - 6 PM EST'],
+      title: 'Phone & WhatsApp',
+      details: ['+91 98765 43210', '+91 98765 43211', 'Available 9 AM - 9 PM'],
       action: 'Call Now'
     },
     {
       icon: Mail,
-      title: 'Email Addresses',
-      details: ['hello@lensart.com', 'bookings@lensart.com', 'Response within 2 hours'],
+      title: 'Email Address',
+      details: ['hello@yourphotography.com', 'bookings@yourphotography.com', 'Response within 2 hours'],
       action: 'Send Email'
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Monday - Friday: 9:00 AM - 6:00 PM', 'Saturday: 10:00 AM - 4:00 PM', 'Sunday: By Appointment'],
-      action: 'Book Meeting'
+      details: ['Monday - Sunday: 9:00 AM - 9:00 PM', 'Weekend events available', 'Flexible scheduling'],
+      action: 'Check Availability'
     },
   ];
 
   const faqs = [
     {
-      question: 'How far in advance should I book?',
-      answer: 'We recommend booking 6-12 months in advance for weddings, and 2-4 weeks for other sessions to ensure availability.'
+      question: 'How far in advance should I book for weddings?',
+      answer: 'We recommend booking 3-6 months in advance for weddings, and 2-4 weeks for pre-wedding shoots to ensure availability.'
     },
     {
-      question: 'What\'s included in your packages?',
-      answer: 'All packages include professional editing, online gallery, print release, and customer support. Specific inclusions vary by service.'
+      question: 'What areas in Madhya Pradesh do you serve?',
+      answer: 'We primarily serve Indore and surrounding areas including Ujjain, Dewas, and Bhopal. Travel fees may apply for locations beyond 50km from Indore.'
     },
     {
-      question: 'Do you travel for destination weddings?',
-      answer: 'Yes! We love destination weddings and have photographed events across the globe. Travel fees may apply depending on location.'
+      question: 'Do you provide traditional Indian wedding photography?',
+      answer: 'Yes! We specialize in Indian weddings and understand all traditional rituals - from haldi and mehendi to phere and vidaai.'
     },
     {
       question: 'When will I receive my photos?',
-      answer: 'Weddings: 4-6 weeks, Events: 2-3 weeks, Portraits: 1-2 weeks. We provide sneak peeks within 48 hours for weddings.'
+      answer: 'Weddings: 3-4 weeks, Pre-wedding: 2 weeks, Portraits: 1 week. We provide 5-10 preview images within 48 hours.'
     }
   ];
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      text: 'Absolutely incredible experience! They captured our day perfectly.',
+      name: 'Priya Sharma',
+      text: 'Captured our Marwari wedding traditions perfectly! Every ritual was beautifully documented.',
       rating: 5,
       service: 'Wedding Photography'
     },
     {
-      name: 'Michael Chen',
-      text: 'Professional, creative, and delivered exactly what we needed.',
+      name: 'Rahul Verma',
+      text: 'Amazing pre-wedding shoot at Lal Bagh Palace. Made us feel so comfortable in front of camera.',
       rating: 5,
-      service: 'Corporate Event'
+      service: 'Pre-Wedding Shoot'
     },
     {
-      name: 'Emily Rodriguez',
-      text: 'The family session was amazing! Everyone felt so comfortable.',
+      name: 'Anjali Patel',
+      text: 'Family portraits came out stunning! They understood our Gujarati traditions perfectly.',
       rating: 5,
       service: 'Family Portrait'
     }
@@ -109,36 +109,36 @@ const ContactPage = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="inline-block">
               <span className="bg-warm-gold/10 text-warm-gold px-4 py-2 rounded-full text-sm font-medium">
-                Get In Touch
+                Book Your Session
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-charcoal leading-tight">
-              Let's Create Something
-              <span className="text-gradient block">Beautiful Together</span>
+              Let's Capture Your
+              <span className="text-gradient block">Special Moments</span>
             </h1>
             
             <p className="text-xl text-muted-text leading-relaxed max-w-3xl mx-auto">
-              Ready to capture your special moments? We'd love to hear about your vision 
-              and discuss how we can bring it to life with our photography expertise.
+              Ready to book your photography session? We serve clients across Indore and Madhya Pradesh. 
+              Share your vision and we'll create beautiful memories together.
             </p>
             
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto pt-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-warm-gold mb-1">24hr</div>
+                <div className="text-2xl font-bold text-warm-gold mb-1">2hr</div>
                 <div className="text-sm text-muted-text">Response Time</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-warm-gold mb-1">500+</div>
-                <div className="text-sm text-muted-text">Happy Clients</div>
+                <div className="text-2xl font-bold text-warm-gold mb-1">350+</div>
+                <div className="text-sm text-muted-text">Happy Couples</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-warm-gold mb-1">10+</div>
+                <div className="text-2xl font-bold text-warm-gold mb-1">8+</div>
                 <div className="text-sm text-muted-text">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-warm-gold mb-1">99%</div>
+                <div className="text-2xl font-bold text-warm-gold mb-1">98%</div>
                 <div className="text-sm text-muted-text">Satisfaction Rate</div>
               </div>
             </div>
@@ -154,10 +154,10 @@ const ContactPage = () => {
               <CardHeader>
                 <CardTitle className="text-3xl text-charcoal flex items-center">
                   <MessageCircle className="h-8 w-8 text-warm-gold mr-3" />
-                  Send Us a Message
+                  Book Your Photography Session
                 </CardTitle>
                 <p className="text-muted-text text-lg">
-                  Fill out the form below and we'll get back to you within 24 hours with a personalized quote.
+                  Fill out the form below and we'll get back to you within 2 hours with a personalized quote.
                 </p>
               </CardHeader>
               <CardContent className="space-y-8">
@@ -200,15 +200,16 @@ const ContactPage = () => {
 
                     <div className="space-y-2">
                       <Label htmlFor="phone" className="text-charcoal font-medium">
-                        Phone Number
+                        WhatsApp Number *
                       </Label>
                       <Input
                         id="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+91 98765 43210"
                         className="border-champagne/30 focus:border-warm-gold h-12"
+                        required
                       />
                     </div>
                   </div>
@@ -216,7 +217,7 @@ const ContactPage = () => {
                   {/* Project Details */}
                   <div className="space-y-6">
                     <h3 className="text-xl font-semibold text-charcoal border-b border-champagne/20 pb-2">
-                      Project Details
+                      Event Details
                     </h3>
                     
                     <div className="grid md:grid-cols-2 gap-6">
@@ -230,9 +231,10 @@ const ContactPage = () => {
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="wedding">Wedding Photography</SelectItem>
+                            <SelectItem value="pre-wedding">Pre-Wedding Shoot</SelectItem>
+                            <SelectItem value="portrait">Family Portraits</SelectItem>
                             <SelectItem value="event">Event Photography</SelectItem>
-                            <SelectItem value="portrait">Portrait Photography</SelectItem>
-                            <SelectItem value="commercial">Commercial Photography</SelectItem>
+                            <SelectItem value="maternity">Maternity Shoot</SelectItem>
                             <SelectItem value="other">Other / Custom Project</SelectItem>
                           </SelectContent>
                         </Select>
@@ -240,18 +242,18 @@ const ContactPage = () => {
                       
                       <div className="space-y-2">
                         <Label htmlFor="budget" className="text-charcoal font-medium">
-                          Budget Range
+                          Budget Range (₹)
                         </Label>
                         <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)}>
                           <SelectTrigger className="border-champagne/30 focus:border-warm-gold h-12">
                             <SelectValue placeholder="Select budget range" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="under-1000">Under $1,000</SelectItem>
-                            <SelectItem value="1000-2500">$1,000 - $2,500</SelectItem>
-                            <SelectItem value="2500-5000">$2,500 - $5,000</SelectItem>
-                            <SelectItem value="5000-10000">$5,000 - $10,000</SelectItem>
-                            <SelectItem value="over-10000">Over $10,000</SelectItem>
+                            <SelectItem value="under-20k">Under ₹20,000</SelectItem>
+                            <SelectItem value="20k-50k">₹20,000 - ₹50,000</SelectItem>
+                            <SelectItem value="50k-1l">₹50,000 - ₹1,00,000</SelectItem>
+                            <SelectItem value="1l-2l">₹1,00,000 - ₹2,00,000</SelectItem>
+                            <SelectItem value="over-2l">Over ₹2,00,000</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -260,7 +262,7 @@ const ContactPage = () => {
                     <div className="space-y-2">
                       <Label htmlFor="date" className="text-charcoal font-medium">
                         <Calendar className="h-4 w-4 inline mr-2" />
-                        Event/Session Date
+                        Event/Shoot Date
                       </Label>
                       <Input
                         id="date"
@@ -275,13 +277,13 @@ const ContactPage = () => {
                   {/* Message */}
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-charcoal font-medium">
-                      Tell Us About Your Vision *
+                      Tell Us About Your Requirements *
                     </Label>
                     <Textarea
                       id="message"
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
-                      placeholder="Tell us about your vision, special requirements, timeline, location, style preferences, or any questions you have. The more details you provide, the better we can tailor our proposal to your needs."
+                      placeholder="Tell us about your event - type of ceremony, number of guests, location in Indore/MP, specific moments you want captured, traditional rituals, style preferences, or any special requirements..."
                       rows={6}
                       className="border-champagne/30 focus:border-warm-gold resize-none"
                       required
@@ -289,7 +291,7 @@ const ContactPage = () => {
                   </div>
 
                   <Button type="submit" className="btn-primary w-full text-lg py-4 group">
-                    Send Message & Get Free Quote
+                    Send Booking Request
                     <Send className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </Button>
                   
@@ -336,14 +338,14 @@ const ContactPage = () => {
               <CardContent className="p-8 text-center">
                 <Phone className="h-12 w-12 mx-auto mb-4 text-white/80" />
                 <h3 className="text-xl font-bold mb-4">
-                  Need Immediate Help?
+                  Urgent Wedding Booking?
                 </h3>
                 <p className="text-white/90 mb-6 text-sm leading-relaxed">
-                  For urgent inquiries or last-minute bookings, call us directly. 
-                  We're here to help make your vision come to life.
+                  For last-minute wedding inquiries or same-day requirements, 
+                  call us directly on WhatsApp for instant response.
                 </p>
                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-warm-gold w-full">
-                  Call: +1 (555) 123-4567
+                  WhatsApp: +91 98765 43210
                 </Button>
               </CardContent>
             </Card>
@@ -392,7 +394,7 @@ const ContactPage = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-muted-text">
-              Quick answers to common questions about our photography services.
+              Quick answers to common questions about our photography services in Indore.
             </p>
           </div>
           
@@ -419,22 +421,35 @@ const ContactPage = () => {
           </div>
         </div>
 
-        {/* Map Section */}
+        {/* Service Area Section */}
         <div className="mt-20">
           <Card className="border-0 shadow-xl overflow-hidden bg-white">
             <div className="h-96 bg-gradient-to-br from-warm-gold/20 to-champagne/10 flex items-center justify-center relative">
               <div className="text-center z-10">
                 <MapPin className="h-16 w-16 text-warm-gold mx-auto mb-6" />
                 <h3 className="text-2xl font-bold text-charcoal mb-4">
-                  Visit Our Studio
+                  Our Service Areas
                 </h3>
-                <p className="text-muted-text text-lg mb-4">
-                  123 Photography Avenue<br />
-                  New York, NY 10001
+                <p className="text-muted-text text-lg mb-6">
+                  Serving clients across Madhya Pradesh
                 </p>
-                <Button className="btn-secondary">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Indore</p>
+                  </div>
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Ujjain</p>
+                  </div>
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Bhopal</p>
+                  </div>
+                  <div className="text-center p-3 bg-warm-gold/10 rounded-lg">
+                    <p className="font-medium text-charcoal">Dewas</p>
+                  </div>
+                </div>
+                <Button className="btn-secondary mt-6">
                   <MapPin className="h-4 w-4 mr-2" />
-                  Get Directions
+                  Check Service Availability
                 </Button>
               </div>
               
