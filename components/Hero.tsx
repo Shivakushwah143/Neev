@@ -9,17 +9,17 @@ const Hero = () => {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/1182963/pexels-photo-1182963.jpeg',
+      image: 'https://images.unsplash.com/flagged/photo-1572534779127-b64758946728?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D',
       title: 'Capturing Love Stories',
       subtitle: 'That Last Forever',
     },
     {
-      image: 'https://cdn-ilanacf.nitrocdn.com/OONirhwofvskdbaBYNpRtKnnSihAeEeG/assets/images/optimized/rev-c44cb65/weddingsbylifeworks.com/wp-content/uploads/2023/12/2-scaled.webp',
+      image: 'https://images.unsplash.com/photo-1693845804012-247c7995a74c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGluZGlhbiUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww',
       title: 'Timeless Wedding',
       subtitle: 'Photography',
     },
     {
-      image: 'https://images.pexels.com/photos/11146331/pexels-photo-11146331.jpeg',
+      image: 'https://images.unsplash.com/photo-1680490964562-60ee7fd82944?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fGluZGlhbiUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww',
       title: 'Moments That',
       subtitle: 'Matter Most',
     },
@@ -56,12 +56,8 @@ const Hero = () => {
       <div className="relative z-10 h-full flex items-center justify-center text-center">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 text-white/90">
-              <Star className="h-4 w-4 text-warm-gold fill-current" />
-              <span className="text-sm font-medium">Award-Winning Photography Studio</span>
-            </div>
 
+          
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -73,7 +69,7 @@ const Hero = () => {
                 </span>
               </h1>
               
-              <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed">
                 Professional photography services that capture the essence of your special moments 
                 with artistic vision and technical excellence.
               </p>
@@ -94,15 +90,15 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-8 pt-16 max-w-md mx-auto">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-white mb-1">500+</div>
-                <div className="text-sm text-white/70">Happy Couples</div>
+                <div className="text-sm text-white">Happy Couples</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white mb-1">1000+</div>
-                <div className="text-sm text-white/70">Events Captured</div>
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">400</div>
+                <div className="text-sm text-white">Events Captured</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-white mb-1">50+</div>
-                <div className="text-sm text-white/70">Awards Won</div>
+                <div className="text-sm text-white">Awards Won</div>
               </div>
             </div>
           </div>

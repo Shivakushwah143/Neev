@@ -83,7 +83,7 @@ const AboutPage = () => {
             <div className="relative animate-fade-in">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1556103255-4443dbae8e5a?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1546560598-9c01e2ef8fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2FwdHVyaW5nJTIwU3Rvcmllc3xlbnwwfHwwfHx8MA%3D%3D"
                   alt="Professional photographer at work"
                   className="w-full h-[600px] object-cover"
                 />
@@ -220,7 +220,7 @@ const AboutPage = () => {
             
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1719937206168-f4c829152b91?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fFBob3RvZ3JhcGh5fGVufDB8fDB8fHww"
                 alt="Award ceremony"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />

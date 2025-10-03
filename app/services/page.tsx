@@ -7,184 +7,193 @@ import { Badge } from '@/components/ui/badge';
 import { Heart, Users, Camera, Building, Star, Clock, MapPin, ArrowRight, Check } from 'lucide-react';
 
 const ServicesPage = () => {
-  const services = [
-    {
-      id: 'wedding',
-      icon: Heart,
-      title: 'Wedding Photography',
-      subtitle: 'Your Love Story, Beautifully Captured',
-      description: 'From intimate ceremonies to grand celebrations, we capture every emotion and detail of your special day with artistic vision and documentary storytelling.',
-      image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=1200&q=80',
-      price: 'Starting from $2,500',
-      duration: '8-12 hours',
-      deliverables: '500+ edited photos',
-      features: [
-        'Pre-wedding consultation',
-        'Engagement session included',
-        'Full ceremony coverage',
-        'Reception photography',
-        'Online gallery',
-        'Print release included',
-        'USB with high-res images',
-        '24/7 customer support'
-      ],
-      packages: [
-        {
-          name: 'Essential',
-          price: '$2,500',
-          duration: '6 hours',
-          photos: '300+ photos',
-          features: ['Ceremony & reception', 'Online gallery', 'Print release']
-        },
-        {
-          name: 'Premium',
-          price: '$3,500',
-          duration: '8 hours',
-          photos: '500+ photos',
-          features: ['Full day coverage', 'Engagement session', 'USB delivery', 'Second photographer']
-        },
-        {
-          name: 'Luxury',
-          price: '$5,000',
-          duration: '10 hours',
-          photos: '800+ photos',
-          features: ['Extended coverage', 'Album included', 'Rehearsal dinner', 'Same-day preview']
-        }
-      ]
-    },
-    {
-      id: 'event',
-      icon: Users,
-      title: 'Event Photography',
-      subtitle: 'Memorable Moments, Professionally Documented',
-      description: 'Corporate events, parties, and celebrations captured with professionalism and creativity. We blend into your event while ensuring every important moment is preserved.',
-      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80',
-      price: 'Starting from $800',
-      duration: '2-8 hours',
-      deliverables: '200+ edited photos',
-      features: [
-        'Event planning consultation',
-        'Arrival to departure coverage',
-        'Key moments documentation',
-        'Group photos',
-        'Online gallery',
-        'Same-day highlights',
-        'Professional editing',
-        'Quick turnaround'
-      ],
-      packages: [
-        {
-          name: 'Basic',
-          price: '$800',
-          duration: '3 hours',
-          photos: '150+ photos',
-          features: ['Key moments', 'Online gallery', '48hr delivery']
-        },
-        {
-          name: 'Standard',
-          price: '$1,200',
-          duration: '5 hours',
-          photos: '250+ photos',
-          features: ['Full coverage', 'Same-day highlights', 'Group photos']
-        },
-        {
-          name: 'Premium',
-          price: '$1,800',
-          duration: '8 hours',
-          photos: '400+ photos',
-          features: ['Extended coverage', 'Second photographer', 'Live social sharing']
-        }
-      ]
-    },
-    {
-      id: 'portrait',
-      icon: Camera,
-      title: 'Portrait Photography',
-      subtitle: 'Individual Stories, Artistic Expression',
-      description: 'Personal branding, family portraits, and individual sessions that capture personality and emotion. Perfect for professionals, families, and personal milestones.',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80',
-      price: 'Starting from $400',
-      duration: '1-3 hours',
-      deliverables: '50+ edited photos',
-      features: [
-        'Pre-session consultation',
-        'Multiple outfit changes',
-        'Professional lighting',
-        'Various backgrounds',
-        'Online gallery',
-        'Retouching included',
-        'Print options',
-        'Personal usage rights'
-      ],
-      packages: [
-        {
-          name: 'Individual',
-          price: '$400',
-          duration: '1 hour',
-          photos: '25+ photos',
-          features: ['Studio or outdoor', '2 outfit changes', 'Basic retouching']
-        },
-        {
-          name: 'Family',
-          price: '$600',
-          duration: '2 hours',
-          photos: '50+ photos',
-          features: ['Multiple locations', 'Group & individual shots', 'Advanced editing']
-        },
-        {
-          name: 'Professional',
-          price: '$800',
-          duration: '3 hours',
-          photos: '75+ photos',
-          features: ['Branding session', 'Multiple looks', 'LinkedIn optimization']
-        }
-      ]
-    },
-    {
-      id: 'commercial',
-      icon: Building,
-      title: 'Commercial Photography',
-      subtitle: 'Brand Stories, Professional Impact',
-      description: 'Product photography, corporate headshots, and brand imagery that elevates your business. Professional quality for marketing, websites, and promotional materials.',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1200&q=80',
-      price: 'Starting from $600',
-      duration: '2-6 hours',
-      deliverables: '100+ edited photos',
-      features: [
-        'Brand consultation',
-        'Product styling',
-        'Multiple angles',
-        'Professional lighting',
-        'Post-production',
-        'Commercial usage rights',
-        'Quick turnaround',
-        'Ongoing support'
-      ],
-      packages: [
-        {
-          name: 'Product',
-          price: '$600',
-          duration: '2 hours',
-          photos: '50+ photos',
-          features: ['Up to 10 products', 'White background', 'Basic retouching']
-        },
-        {
-          name: 'Branding',
-          price: '$1,200',
-          duration: '4 hours',
-          photos: '100+ photos',
-          features: ['Lifestyle shots', 'Team photos', 'Office environment']
-        },
-        {
-          name: 'Campaign',
-          price: '$2,500',
-          duration: '6 hours',
-          photos: '200+ photos',
-          features: ['Full campaign', 'Multiple locations', 'Advanced post-production']
-        }
-      ]
-    }
-  ];
+ const services = [
+  {
+    id: 'wedding',
+    icon: Heart,
+    title: 'Wedding Photography',
+    subtitle: 'Your Love Story, Beautifully Captured',
+    description:
+      'From intimate ceremonies to grand celebrations, we capture every emotion and detail of your special day with artistic vision and documentary storytelling.',
+    image:
+      'https://plus.unsplash.com/premium_photo-1682092597591-81f59c80d9ec?w=500&auto=format&fit=crop&q=60',
+    price: 'Starting from ₹60,000',
+    duration: '8-12 hours',
+    deliverables: '500+ edited photos',
+    features: [
+      'Pre-wedding consultation',
+      'Engagement session included',
+      'Full ceremony coverage',
+      'Reception photography',
+      'Online gallery',
+      'Print release included',
+      'USB with high-res images',
+      '24/7 customer support',
+    ],
+    packages: [
+      {
+        name: 'Essential',
+        price: '₹60,000',
+        duration: '6 hours',
+        photos: '300+ photos',
+        features: ['Ceremony & reception', 'Online gallery', 'Print release'],
+      },
+      {
+        name: 'Premium',
+        price: '₹90,000',
+        duration: '8 hours',
+        photos: '500+ photos',
+        features: ['Full day coverage', 'Engagement session', 'USB delivery', 'Second photographer'],
+      },
+      {
+        name: 'Luxury',
+        price: '₹1,50,000',
+        duration: '10 hours',
+        photos: '800+ photos',
+        features: ['Extended coverage', 'Album included', 'Rehearsal dinner', 'Same-day preview'],
+      },
+    ],
+  },
+  {
+    id: 'event',
+    icon: Users,
+    title: 'Event Photography',
+    subtitle: 'Memorable Moments, Professionally Documented',
+    description:
+      'Corporate events, parties, and celebrations captured with professionalism and creativity. We blend into your event while ensuring every important moment is preserved.',
+    image:
+      'https://plus.unsplash.com/premium_photo-1661855417229-ca181aaf8c22?w=500&auto=format&fit=crop&q=60',
+    price: 'Starting from ₹18,000',
+    duration: '2-8 hours',
+    deliverables: '200+ edited photos',
+    features: [
+      'Event planning consultation',
+      'Arrival to departure coverage',
+      'Key moments documentation',
+      'Group photos',
+      'Online gallery',
+      'Same-day highlights',
+      'Professional editing',
+      'Quick turnaround',
+    ],
+    packages: [
+      {
+        name: 'Basic',
+        price: '₹18,000',
+        duration: '3 hours',
+        photos: '150+ photos',
+        features: ['Key moments', 'Online gallery', '48hr delivery'],
+      },
+      {
+        name: 'Standard',
+        price: '₹25,000',
+        duration: '5 hours',
+        photos: '250+ photos',
+        features: ['Full coverage', 'Same-day highlights', 'Group photos'],
+      },
+      {
+        name: 'Premium',
+        price: '₹40,000',
+        duration: '8 hours',
+        photos: '400+ photos',
+        features: ['Extended coverage', 'Second photographer', 'Live social sharing'],
+      },
+    ],
+  },
+  {
+    id: 'portrait',
+    icon: Camera,
+    title: 'Portrait Photography',
+    subtitle: 'Individual Stories, Artistic Expression',
+    description:
+      'Personal branding, family portraits, and individual sessions that capture personality and emotion. Perfect for professionals, families, and personal milestones.',
+    image:
+      'https://images.unsplash.com/photo-1716538859169-80c9f614128e?w=500&auto=format&fit=crop&q=60',
+    price: 'Starting from ₹6,000',
+    duration: '1-3 hours',
+    deliverables: '50+ edited photos',
+    features: [
+      'Pre-session consultation',
+      'Multiple outfit changes',
+      'Professional lighting',
+      'Various backgrounds',
+      'Online gallery',
+      'Retouching included',
+      'Print options',
+      'Personal usage rights',
+    ],
+    packages: [
+      {
+        name: 'Individual',
+        price: '₹6,000',
+        duration: '1 hour',
+        photos: '25+ photos',
+        features: ['Studio or outdoor', '2 outfit changes', 'Basic retouching'],
+      },
+      {
+        name: 'Family',
+        price: '₹10,000',
+        duration: '2 hours',
+        photos: '50+ photos',
+        features: ['Multiple locations', 'Group & individual shots', 'Advanced editing'],
+      },
+      {
+        name: 'Professional',
+        price: '₹15,000',
+        duration: '3 hours',
+        photos: '75+ photos',
+        features: ['Branding session', 'Multiple looks', 'LinkedIn optimization'],
+      },
+    ],
+  },
+  {
+    id: 'commercial',
+    icon: Building,
+    title: 'Commercial Photography',
+    subtitle: 'Brand Stories, Professional Impact',
+    description:
+      'Product photography, corporate headshots, and brand imagery that elevates your business. Professional quality for marketing, websites, and promotional materials.',
+    image:
+      'https://plus.unsplash.com/premium_photo-1726869694722-66df5f9621b8?w=500&auto=format&fit=crop&q=60',
+    price: 'Starting from ₹12,000',
+    duration: '2-6 hours',
+    deliverables: '100+ edited photos',
+    features: [
+      'Brand consultation',
+      'Product styling',
+      'Multiple angles',
+      'Professional lighting',
+      'Post-production',
+      'Commercial usage rights',
+      'Quick turnaround',
+      'Ongoing support',
+    ],
+    packages: [
+      {
+        name: 'Product',
+        price: '₹12,000',
+        duration: '2 hours',
+        photos: '50+ photos',
+        features: ['Up to 10 products', 'White background', 'Basic retouching'],
+      },
+      {
+        name: 'Branding',
+        price: '₹20,000',
+        duration: '4 hours',
+        photos: '100+ photos',
+        features: ['Lifestyle shots', 'Team photos', 'Office environment'],
+      },
+      {
+        name: 'Campaign',
+        price: '₹35,000',
+        duration: '6 hours',
+        photos: '200+ photos',
+        features: ['Full campaign', 'Multiple locations', 'Advanced post-production'],
+      },
+    ],
+  },
+];
+
 
   const processSteps = [
     {
