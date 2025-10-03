@@ -131,9 +131,13 @@ const Services = () => {
               <Button className="btn-primary text-lg px-8 py-3">
                 Get Free Quote
               </Button>
-              <Button variant="outline" className="btn-secondary text-lg px-8 py-3">
-                View Portfolio
-              </Button>
+               <Link href="/portfolio">
+                <Button className="btn-primary text-lg px-10 py-4 group">
+                  View Portfolio
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Button>
+              </Link>
+
             </div>
           </div>
         </div>

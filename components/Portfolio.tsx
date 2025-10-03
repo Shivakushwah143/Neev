@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -149,9 +151,13 @@ const Portfolio = () => {
               Let's create something beautiful together. Every project is a new opportunity 
               to capture the extraordinary in the ordinary.
             </p>
-            <Button className="btn-primary text-lg px-8 py-3">
-              Start Your Project
-            </Button>
+             <Link href="/contact">
+                <Button className="btn-primary text-lg px-10 py-4 group">
+                  Get contect
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Button>
+              </Link>
+
           </div>
         </div>
       </div>
