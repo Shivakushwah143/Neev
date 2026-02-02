@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  eslint: {
-    ignoreDuringBuilds: true,
+  output: "export",
+
+  // IMPORTANT: repo name (case-sensitive)
+  basePath: "/Neev",
+  assetPrefix: "/Neev/",
+
+  images: {
+    unoptimized: true,
   },
-  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;
