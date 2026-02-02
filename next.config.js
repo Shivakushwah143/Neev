@@ -2,13 +2,14 @@
 const nextConfig = {
   output: "export",
 
-  // IMPORTANT: repo name (case-sensitive)
   basePath: "/Neev",
-  assetPrefix: "/Neev/",
+  assetPrefix: "/Neev",
 
   images: {
     unoptimized: true,
   },
+
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
