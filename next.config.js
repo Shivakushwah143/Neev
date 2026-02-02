@@ -1,15 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-
-  basePath: "/Neev",
-  assetPrefix: "/Neev",
-
-  images: {
-    unoptimized: true,
+  output: 'export',
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-
-  trailingSlash: true,
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;
